@@ -23,7 +23,7 @@ def email_list_repeater(listOld, listNew):
 
   new = []
   for email in listNew:
-      if '@' in email and email != 'test@gmail.com':
+      if '@' in email:
         if not email in listOld:
           new += [email]
 
